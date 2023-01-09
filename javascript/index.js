@@ -1,23 +1,12 @@
 function updateTime() {
-  // McMurdo, Antarctica
-  let mcMurdoElement = document.querySelector("#mcmurdo");
-  let mcMurdoDateElement = mcMurdoElement.querySelector(".date");
-  let mcMurdoTimeElement = mcMurdoElement.querySelector(".time");
-  let mcMurdoTime = moment().tz("Antarctica/McMurdo");
+  // New York, New York
+  let newYorkElement = document.querySelector("#new_york");
+  let newYorkDateElement = newYorkElement.querySelector(".date");
+  let newYorkTimeElement = newYorkElement.querySelector(".time");
+  let newYorkTime = moment().tz("America/New_York");
 
-  mcMurdoDateElement.innerHTML = moment().format("MMMM Do YYYY");
-  mcMurdoTimeElement.innerHTML = mcMurdoTime.format(
-    "h:mm:ss [<small>]A[</small>]"
-  );
-
-  // Syndey, Australia
-  let sydneyElement = document.querySelector("#sydney");
-  let sydneyDateElement = sydneyElement.querySelector(".date");
-  let sydneyTimeElement = sydneyElement.querySelector(".time");
-  let sydneyTime = moment().tz("Australia/Sydney");
-
-  sydneyDateElement.innerHTML = moment().format("MMMM Do YYYY");
-  sydneyTimeElement.innerHTML = sydneyTime.format(
+  newYorkDateElement.innerHTML = moment().format("MMMM Do YYYY");
+  newYorkTimeElement.innerHTML = newYorkTime.format(
     "h:mm:ss [<small>]A[</small>]"
   );
 }
