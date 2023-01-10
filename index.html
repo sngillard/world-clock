@@ -16,46 +16,270 @@
       <select id="city">
         <option value="">Select a city...</option>
         <option value="current">My current location 📍</option>
-        <option value="America/Anchorage">Anchorage, Alaska 🇺🇸</option>
-        <option value="Pacific/Apia">Apia, Samoa 🇼🇸</option>
-        <option value="Pacific/Auckland">Auckland, New Zealand 🇳🇿</option>
-        <option value="Asia/Baku">Baku, Azerbaijan 🇦🇿</option>
-        <option value="Australia/Brisbane">Brisbane, Austalia 🇦🇺</option>
-        <option value="Africa/Cairo">Cairo, Egypt 🇪🇬</option>
-        <option value="Asia/Dhaka">Dhaka, Bangladesh 🇧🇩</option>
-        <option value="Pacific/Honolulu">Honolulu, Hawaii 🇺🇸</option>
-        <option value="Asia/Jakarta">Jakarta, Indonesia 🇮🇩</option>
-        <option value="Asia/Kabul">Kabul, Afghanistan 🇦🇫</option>
-        <option value="Asia/Karachi">Karachi, Pakistan 🇵🇰</option>
-        <option value="Asia/Kathmandu">Kathmandu, Nepal 🇳🇵</option>
-        <option value="Asia/Kolkata">Kolkata, India 🇮🇳</option>
-        <option value="Africa/Lagos">Lagos, Nigeria 🇳🇬</option>
-        <option value="Europe/London">London, England 🏴󠁧󠁢󠁥󠁮󠁧󠁿</option>
-        <option value="America/Los_Angeles">Los Angeles, California 🇺🇸</option>
-        <option value="America/Manaus">Manaus, Brazil 🇧🇷</option>
-        <option value="Antarctica/McMurdo">
-          McMurdo Station, Antarctica 🇦🇶
+        <option value="America/Anchorage">Anchorage, Alaska 🇺🇸 (-9)</option>
+        <option value="Pacific/Apia">Apia, Samoa 🇼🇸 (+13)</option>
+        <option value="Pacific/Auckland">Auckland, New Zealand 🇳🇿 (+12)</option>
+        <option value="Asia/Baku">Baku, Azerbaijan 🇦🇿 (+4)</option>
+        <option value="Australia/Brisbane">Brisbane, Austalia 🇦🇺 (+10)</option>
+        <option value="Africa/Cairo">Cairo, Egypt 🇪🇬 (+2)</option>
+        <option value="Asia/Dhaka">Dhaka, Bangladesh 🇧🇩 (+6)</option>
+        <option value="Pacific/Honolulu">Honolulu, Hawaii 🇺🇸 (-10)</option>
+        <option value="Asia/Jakarta">Jakarta, Indonesia 🇮🇩 (+7)</option>
+        <option value="Asia/Kabul">Kabul, Afghanistan 🇦🇫 (+4.5)</option>
+        <option value="Asia/Karachi">Karachi, Pakistan 🇵🇰 (+5)</option>
+        <option value="Asia/Kathmandu">Kathmandu, Nepal 🇳🇵 (+5.75)</option>
+        <option value="Asia/Kolkata">Kolkata, India 🇮🇳 (+5.5)</option>
+        <option value="Africa/Lagos">Lagos, Nigeria 🇳🇬 (+1)</option>
+        <option value="Europe/London">London, England 🏴󠁧󠁢󠁥󠁮󠁧󠁿 (UTC)</option>
+        <option value="America/Los_Angeles">
+          Los Angeles, California 🇺🇸 (-8)
         </option>
-        <option value="America/Mexico_City">Mexico City, Mexico 🇲🇽</option>
-        <option value="Europe/Moscow">Moscow, Russia 🇷🇺</option>
-        <option value="America/New_York">New York, New York 🇺🇸</option>
-        <option value="Pacific/Pago_Pago">Pago Pago, American Samoa 🇦🇸</option>
-        <option value="America/Phoenix">Phoenix, Arizona 🇺🇸</option>
-        <option value="Atlantic/Cape_Verde">Praia, Cape Verde 🇨🇻</option>
-        <option value="America/Santiago">Santiago, Chile 🇨🇱</option>
-        <option value="America/Sao_Paulo">Sao Paulo, Brazil 🇧🇷</option>
-        <option value="Asia/Shanghai">Shanghai, China 🇨🇳</option>
-        <option value="America/St_Johns">St. John's, Canada 🇨🇦</option>
-        <option value="Australia/Sydney">Sydney, Australia 🇦🇺</option>
-        <option value="Asia/Tehran">Tehran, Iran 🇮🇷</option>
-        <option value="Asia/Tokyo">Tokyo, Japan 🇯🇵</option>
-        <option value="Asia/Yangon">Yangon, Myanmar 🇲🇲</option>
+        <option value="America/Manaus">Manaus, Brazil 🇧🇷 (-4)</option>
+        <option value="America/Mexico_City">Mexico City, Mexico 🇲🇽 (-6)</option>
+        <option value="Europe/Moscow">Moscow, Russia 🇷🇺 (+3)</option>
+        <option value="America/New_York">New York, New York 🇺🇸 (-5)</option>
+        <option value="America/Phoenix">Phoenix, Arizona 🇺🇸 (-7)</option>
+        <option value="Atlantic/Cape_Verde">Praia, Cape Verde 🇨🇻 (-1)</option>
+        <option value="America/Santiago">Santiago, Chile 🇨🇱 (-3)</option>
+        <option value="Asia/Shanghai">Shanghai, China 🇨🇳 (+8)</option>
+        <option value="America/St_Johns">St. John's, Canada 🇨🇦 (-3.5)</option>
+        <option value="Atlantic/South_Georgia">
+          South Georgia Island 🇬🇧 (-2)
+        </option>
+        <option value="Australia/Sydney">Sydney, Australia 🇦🇺 (+11)</option>
+        <option value="Asia/Tehran">Tehran, Iran 🇮🇷 (+3.5)</option>
+        <option value="Asia/Tokyo">Tokyo, Japan 🇯🇵 (+9)</option>
+        <option value="Asia/Yangon">Yangon, Myanmar 🇲🇲 (+6.5)</option>
       </select>
 
       <div id="cities">
+        <div class="city" id="honolulu">
+          <div>
+            <h2>Honolulu, Hawaii 🇺🇸</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="anchorage">
+          <div>
+            <h2>Anchorage, Alaska 🇺🇸</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="los_angeles">
+          <div>
+            <h2>Los Angeles, California 🇺🇸</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="phoenix">
+          <div>
+            <h2>Phoenix, Arizona 🇺🇸</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="mexico_city">
+          <div>
+            <h2>Mexico City 🇲🇽</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
         <div class="city" id="new_york">
           <div>
-            <h2>New York, New York 🇺🇸</h2>
+            <h2>New York 🇺🇸</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="manaus">
+          <div>
+            <h2>Manaus 🇧🇷</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="south_georgia">
+          <div>
+            <h2>South Georgia 🇬🇧</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="st_johns">
+          <div>
+            <h2>St. John's 🇨🇦</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="santiago">
+          <div>
+            <h2>Santiago 🇨🇱</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="praia">
+          <div>
+            <h2>Praia 🇨🇻</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="london">
+          <div>
+            <h2>London 🏴󠁧󠁢󠁥󠁮󠁧󠁿</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="lagos">
+          <div>
+            <h2>Lagos 🇳🇬</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="cairo">
+          <div>
+            <h2>Cairo 🇪🇬</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="moscow">
+          <div>
+            <h2>Moscow 🇷🇺</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="tehran">
+          <div>
+            <h2>Tehran 🇮🇷</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="baku">
+          <div>
+            <h2>Baku 🇦🇿</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="kabul">
+          <div>
+            <h2>Kabul 🇦🇫</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="karachi">
+          <div>
+            <h2>Karachi 🇵🇰</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="kolkata">
+          <div>
+            <h2>Kolkata 🇮🇳</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="kathmandu">
+          <div>
+            <h2>Kathmandu 🇳🇵</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="dhaka">
+          <div>
+            <h2>Dhaka 🇧🇩</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="yangon">
+          <div>
+            <h2>Yangon 🇲🇲</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="jakarta">
+          <div>
+            <h2>Jakarta 🇮🇩</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="shanghai">
+          <div>
+            <h2>Shanghai 🇨🇳</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="tokyo">
+          <div>
+            <h2>Tokyo 🇯🇵</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="brisbane">
+          <div>
+            <h2>Brisbane 🇦🇺</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="sydney">
+          <div>
+            <h2>Sydney 🇦🇺</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="auckland">
+          <div>
+            <h2>Auckland 🇳🇿</h2>
             <div class="date"></div>
           </div>
           <div class="time"></div>
