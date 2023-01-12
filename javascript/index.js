@@ -18,7 +18,7 @@ function updateCity(event) {
             "h:mm:ss"
           )}<small>${cityTime.format("A")}</small></div>
         </div>
-        <a href="/">All cities</a>
+        <a href="/">View all cities</a>
         `;
   }, 1000);
 }
@@ -33,6 +33,19 @@ setInterval(function () {
 
     honoluluDateElement.innerHTML = honoluluTime.format("MMMM Do YYYY");
     honoluluTimeElement.innerHTML = honoluluTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+
+  // Marquesas Islands, French Polynesia (-9.5)
+  let marquesasElement = document.querySelector("#marquesas");
+  if (marquesasElement) {
+    let marquesasDateElement = marquesasElement.querySelector(".date");
+    let marquesasTimeElement = marquesasElement.querySelector(".time");
+    let marquesasTime = moment().tz("Pacific/Marquesas");
+
+    marquesasDateElement.innerHTML = marquesasTime.format("MMMM Do YYYY");
+    marquesasTimeElement.innerHTML = marquesasTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
@@ -400,17 +413,26 @@ setInterval(function () {
     );
   }
 
-  // Auckland, New Zealand (+12)
-  let aucklandElement = document.querySelector("#auckland");
-  if (aucklandElement) {
-    let aucklandDateElement = aucklandElement.querySelector(".date");
-    let aucklandTimeElement = aucklandElement.querySelector(".time");
-    let aucklandTime = moment().tz("Pacific/Auckland");
+  // Fiji Islands (+12)
+  let fijiElement = document.querySelector("#fiji");
+  if (fijiElement) {
+    let fijiDateElement = fijiElement.querySelector(".date");
+    let fijiTimeElement = fijiElement.querySelector(".time");
+    let fijiTime = moment().tz("Pacific/Fiji");
 
-    aucklandDateElement.innerHTML = aucklandTime.format("MMMM Do YYYY");
-    aucklandTimeElement.innerHTML = aucklandTime.format(
-      "h:mm:ss [<small>]A[</small>]"
-    );
+    fijiDateElement.innerHTML = fijiTime.format("MMMM Do YYYY");
+    fijiTimeElement.innerHTML = fijiTime.format("h:mm:ss [<small>]A[</small>]");
+  }
+
+  // Apia, Samoa (+13)
+  let apiaElement = document.querySelector("#apia");
+  if (apiaElement) {
+    let apiaDateElement = apiaElement.querySelector(".date");
+    let apiaTimeElement = apiaElement.querySelector(".time");
+    let apiaTime = moment().tz("Pacific/Auckland");
+
+    apiaDateElement.innerHTML = apiaTime.format("MMMM Do YYYY");
+    apiaTimeElement.innerHTML = apiaTime.format("h:mm:ss [<small>]A[</small>]");
   }
 }, 1000);
 

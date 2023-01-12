@@ -58,6 +58,10 @@ select {
   line-height: 36px;
 }
 
+#selectCityLink {
+  font-size: 18px;
+}
+
 footer {
   text-align: center;
   font-size: 18px;
