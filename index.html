@@ -9,11 +9,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.40/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock - Sarah Gillard</title>
   </head>
+
   <body>
     <div class="container">
       <h1>🌎 World Clock 🕰️</h1>
-
-      <select id="city">
+      <select name="city" id="selectCity">
         <option value="">Select a city...</option>
         <option value="current">My current location 📍</option>
         <option value="America/Anchorage">Anchorage, Alaska 🇺🇸 (-9)</option>
@@ -52,7 +52,7 @@
         <option value="Asia/Yangon">Yangon, Myanmar 🇲🇲 (+6.5)</option>
       </select>
 
-      <div id="cities">
+      <div id="city">
         <div class="city" id="honolulu">
           <div>
             <h2>Honolulu, Hawaii 🇺🇸</h2>
