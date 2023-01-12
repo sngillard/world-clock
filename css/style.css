@@ -59,6 +59,10 @@ select {
   line-height: 36px;
 }
 
+.viewAllLink {
+  font-size: 16px;
+}
+
 #selectCityLink {
   font-size: 14px;
 }
@@ -68,4 +72,121 @@ footer {
   font-size: 12px;
   color: rgba(0, 0, 0, 0.8);
   padding-bottom: 35px;
+}
+
+/* Media Query for iphone XR, Galaxy A51/71, Galaxy S20 Ultra */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  select {
+    font-size: 14px;
+  }
+
+  .date {
+    font-size: 14px;
+  }
+
+  .time {
+    font-size: 26px;
+  }
+
+  .time small {
+    font-size: 18px;
+  }
+
+  .viewAllLink {
+    font-size: 14px;
+  }
+
+  #selectCityLink {
+    font-size: 12px;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+}
+
+/* Media Query for iPhone SE, iPhone XR Pro, Pixel5 */
+@media (max-width: 400px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  select {
+    font-size: 12px;
+  }
+
+  .date {
+    font-size: 12px;
+  }
+
+  .time {
+    font-size: 24px;
+  }
+
+  .time small {
+    font-size: 16px;
+  }
+
+  .viewAllLink {
+    font-size: 12px;
+  }
+
+  #selectCityLink {
+    font-size: 10px;
+  }
+
+  footer {
+    font-size: 8px;
+  }
+}
+
+/* Media Query for smallest phones, like Galaxy Fold */
+@media (max-width: 400px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  select {
+    font-size: 10px;
+  }
+
+  .date {
+    font-size: 10px;
+  }
+
+  .time {
+    font-size: 16px;
+  }
+
+  .time small {
+    font-size: 12px;
+  }
+
+  .viewAllLink {
+    font-size: 10px;
+  }
+
+  #selectCityLink {
+    font-size: 9px;
+  }
+
+  footer {
+    font-size: 8px;
+  }
 }
