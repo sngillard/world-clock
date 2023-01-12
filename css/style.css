@@ -77,19 +77,31 @@ footer {
 /* Media Query for iphone XR, Galaxy A51/71, Galaxy S20 Ultra */
 @media (max-width: 480px) {
   h1 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   h2 {
-    font-size: 18px;
+    font-size: 22px;
+    margin: 0px;
+  }
+
+  .container {
+    margin: 40px auto;
+    padding: 20px 20px 30px 20px;
+  }
+
+  .city {
+    margin: 10px;
+    padding: 20px 0;
   }
 
   select {
     font-size: 14px;
+    padding: 8px;
   }
 
   .date {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .time {
@@ -116,19 +128,32 @@ footer {
 /* Media Query for iPhone SE, iPhone XR Pro, Pixel5 */
 @media (max-width: 400px) {
   h1 {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   h2 {
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0px;
+  }
+
+  .container {
+    margin: 30px auto;
+    padding: 20px 10px 30px 10px;
+  }
+
+  .city {
+    margin: 10px;
+    padding: 20px 0;
   }
 
   select {
     font-size: 12px;
+    padding: 8px;
   }
 
   .date {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .time {
@@ -153,21 +178,34 @@ footer {
 }
 
 /* Media Query for smallest phones, like Galaxy Fold */
-@media (max-width: 400px) {
+@media (max-width: 300px) {
   h1 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   h2 {
     font-size: 14px;
+    line-height: 34px;
+    margin: 0 0 0px;
   }
 
   select {
     font-size: 10px;
+    padding: 5px;
+  }
+
+  .container {
+    margin: 30px auto;
+    padding: 20px;
+  }
+
+  .city {
+    margin: 0px;
+    padding: 10px 0;
   }
 
   .date {
-    font-size: 10px;
+    font-size: 8px;
   }
 
   .time {
@@ -180,10 +218,11 @@ footer {
 
   .viewAllLink {
     font-size: 10px;
+    margin-top: 5px;
   }
 
   #selectCityLink {
-    font-size: 9px;
+    font-size: 8px;
   }
 
   footer {
